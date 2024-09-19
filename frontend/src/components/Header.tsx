@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import logoImg from "../assets/logo.svg"
+import MobileNav from "./MobileNav"
+import MainNav from "./MainNav"
 const Header = () => {
   return (
     <div className="border-b-2 border-b-red-500 py-6">
@@ -7,6 +9,12 @@ const Header = () => {
         <Link to="/" className="text-3xl font-bold tracking-tight text-red-500">
           <img src={logoImg} alt="" />
         </Link>
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
+        <div className="hidden md:block">
+          <MainNav />
+        </div>
       </div>
     </div>
   )
