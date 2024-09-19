@@ -1,4 +1,5 @@
 import lightLogoImg from "../assets/logo-light.svg"
+import { Separator } from "./ui/separator"
 const Footer = () => {
   return (
     <div className="bg-stone-800 py-10">
@@ -11,6 +12,10 @@ const Footer = () => {
           <span className="hover:text-red-500">Data Protection Terms</span>
           <span className="hover:text-red-500">Cookies</span>
         </span>
+      </div>
+      <div className="container mx-auto flex flex-col justify-between items-center mt-6">
+        <Separator className="bg-stone-700 mb-6" />
+        <span className="text-stone-400 text-sm">©SVAGGY 2024-2025 Powered by CloudEventix</span>
       </div>
     </div>
   )
